@@ -1,18 +1,34 @@
 import { useState } from 'react';
 import * as Styled from './styles';
-import imageBackground from '../../assets/images/background.jpg';
+import { Input } from '@mui/material';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
   return (  
-  <Styled.Container>
-    <Styled.ContainerLogo>
-      <Styled.Logo src={imageBackground}/>
-    </Styled.ContainerLogo>
-    <Styled.ContainerForm>
-      <Styled.TitleForm>Leandro</Styled.TitleForm>
-    </Styled.ContainerForm>
-  </Styled.Container>
+    <Styled.Structure>
+      <Styled.Container>
+        <Styled.ContainerForm>
+          <Styled.Form>Email</Styled.Form>
+            <Styled.InputForm>
+              <Input 
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={{width: '60%', height: '40px', borderRadius: '10px', padding: '10px'}}
+              />
+            </Styled.InputForm>
+          <Styled.Form>Senha</Styled.Form>
+          <Styled.InputForm>
+              <Input 
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={{width: '60%', height: '40px', borderRadius: '10px', padding: '10px'}}
+              />
+            </Styled.InputForm>
+        </Styled.ContainerForm>
+      </Styled.Container>
+    </Styled.Structure>
   );
 };
 export default Login;

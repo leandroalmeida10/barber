@@ -1,33 +1,37 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+
+export const Structure = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #000000;
 `;
 
-export const ContainerLogo = styled.div`
-  width: 100%;
+export const Container = styled.div`
+  width: 80%;
+  max-width: 1100px;
   height: 100%;
-  background-color: #f3f3f3;
+  background-color: #fff;
   position: absolute;
 `;
 
 export const ContainerForm = styled.div`
-  width: 20%;
-  height: 20%;
+  width: 60%;
+  height: 30%;
   background-color: #f3f3f3;
-  margin: 0 auto;
-  position: relative ;
+  position: relative;
+  top: 35%;
+  left: 20%;
 `;
 
-export const TitleForm = styled.h1`
-  font-size: 30px;
-  color: #000000;
+export const Form = styled.h4`
+  color: #000;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 `;
 
-export const Logo = styled.img`
-  width: 100%;
-  height: 100%;
+export const InputForm = styled.div`
+  text-align: center;
 `;
 
