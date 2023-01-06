@@ -8,6 +8,7 @@ const Register: React.FC = () => {
     return(
         <Styled.Structure>
             <text>Register</text>
+            <text>Form</text>
         </Styled.Structure>
     )
 
