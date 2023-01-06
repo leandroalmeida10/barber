@@ -35,3 +35,13 @@ export const InputForm = styled.div`
   text-align: center;
 `;
 
+export const StyledButton = styled.button`
+  width: 100%;
+  height: 40px;
+`;
+
+export const Button = styled.button`
+  width: 100%;
+  height: 40px;
+`;
+

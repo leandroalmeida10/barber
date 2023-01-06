@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import * as Styled from './styles';
-import { Input } from '@mui/material';
+import { Button, Input } from '@mui/material';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -26,6 +26,11 @@ const Login: React.FC = () => {
                 style={{width: '60%', height: '40px', borderRadius: '10px', padding: '10px'}}
               />
             </Styled.InputForm>
+          <Styled.Button>
+            <Button
+              title="Cadastrar"
+            />
+          </Styled.Button>
         </Styled.ContainerForm>
       </Styled.Container>
     </Styled.Structure>
