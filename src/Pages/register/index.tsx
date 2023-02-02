@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import * as Styled from "./styles";
 
 const Register: React.FC = () => {
-
-    const [email, setEmail] = useState('');
 
     return(
         <Styled.Structure>

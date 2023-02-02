@@ -2,7 +2,7 @@ import {Route, Routes} from 'react-router-dom';
 import Login from '../Pages/login';
 import Register from '../Pages/register';
 
-const main: React.FC = () => {
+const Main: React.FC = () => {
     return (
         <Routes>
             <Route path="/" element={<Login />} />
@@ -11,3 +11,5 @@ const main: React.FC = () => {
     );
 
 };
+
+export default Main;

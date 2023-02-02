@@ -1,3 +1,4 @@
+import { Input } from '@mui/material';
 import styled from 'styled-components';
 
 
@@ -18,7 +19,6 @@ export const Container = styled.div`
 export const ContainerForm = styled.div`
   width: 60%;
   height: 30%;
-  background-color: #f3f3f3;
   position: relative;
   top: 35%;
   left: 20%;
@@ -43,5 +43,9 @@ export const StyledButton = styled.button`
 export const Button = styled.button`
   width: 100%;
   height: 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: white;
 `;
+
 
